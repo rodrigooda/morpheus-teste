@@ -56,9 +56,10 @@ public class UsuarioDAO {
 	public static void main(String[] args) {
 		UsuarioDAO ud = new UsuarioDAO();
 		try {
-			ud.add(new Usuario("Teste3"));
+			ud.add(new Usuario("Teste4"));
 			for (Usuario usuario : ud.getAll())
 				System.out.println(usuario.getNome());
+			System.out.println(ud.getByNome("Teste4").getNome());
 		} catch (IOException e) {
 			e.printStackTrace();
 			System.out.println("IOException");
