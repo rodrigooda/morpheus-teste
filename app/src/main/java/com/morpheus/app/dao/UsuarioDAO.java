@@ -16,7 +16,6 @@ import com.morpheus.app.model.Usuario;
 
 @Repository
 public class UsuarioDAO {
-	List<Usuario> usuarios = new ArrayList<Usuario>();
 
 	public void add(Usuario usuario) throws IOException, AppException {
 		BufferedWriter bw = new BufferedWriter(new FileWriter(this.readFile(), true));
@@ -26,6 +25,7 @@ public class UsuarioDAO {
 	}
 
 	public List<Usuario> getAll() throws IOException, AppException {
+		List<Usuario> usuarios = new ArrayList<Usuario>();
 		BufferedReader br = new BufferedReader(new FileReader(this.readFile()));
 		String record;
 		while ((record = br.readLine()) != null)
