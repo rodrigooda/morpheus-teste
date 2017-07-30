@@ -1,5 +1,5 @@
 # morpheus-teste
-## Inicio
+## Início
 
 Instruções para deploy da aplicação.
 
