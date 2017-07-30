@@ -1,4 +1,13 @@
 # morpheus-teste
+## Inicio
+
+Instruções para deploy da aplicação.
+
+### Prerequisitos
+
+Java 8
+
+### Instalação
 
 1 - Importar como projeto maven.
 3 - Executar maven com comandos clean install
