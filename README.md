@@ -11,6 +11,8 @@ Java 8
 
 1 - Importar como projeto maven.
 
+2 - Criar uma pasta chamada app no diretorio do usuário e copiar para ela o arquivo nomes.txt
+
 3 - Executar maven com comandos clean install
 
 4 - Rodar o jar do projeto localizado em target utilizando terminal ou cmd com comando java - jar app-0.0.1-SNAPSHOT.jar
