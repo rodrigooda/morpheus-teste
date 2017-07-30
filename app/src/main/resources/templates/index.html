@@ -1,10 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
-<meta charset="UTF-8"></meta>
-<title>Insert title here</title>
+<meta charset="UTF-8" />
+<title>Teste Morpheus</title>
+
+<link rel="stylesheet" href="/webjars/bulma/0.4.4/css/bulma.css" />
+
 </head>
 <body>
-<h1>Olá spring</h1>
+	<nav class="navbar is-light">
+		<div class="navbar-brand">
+			<a class="navbar-item" href="#!/"> Teste Morpheus </a>
+		</div>
+		<div class="navbar-menu">
+			<div class="navbar-start">
+				<a class="navbar-item " href="#!/"> Home </a>
+			</div>
+		</div>
+	</nav>
+
+	<section class="section is-light">
+		<div class="container content">
+			<hr />
+			<p class="control">
+				<a href="#!/list" class="button is-primary">Listar</a> <a
+					href="#!/add" class="button is-primary">Cadastrar</a>
+			</p>
+		</div>
+		<ng-view></ng-view>
+	</section>
+
+	<footer class="footer is-light">
+		<div class="container">
+			<div class="content has-text-centered">
+				<p>
+					<strong>Teste Morpheus</strong> by <a href="http://odati.com.br">OdaTI</a>
+				</p>
+				<p>
+					<a class="icon" href="https://github.com/rodrigooda"> <i
+						class="fa fa-github"></i>
+					</a>
+				</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="/webjars/angularjs/1.6.4/angular.js"></script>
+
+	<script src="/webjars/angularjs/1.6.4/angular-resource.js"></script>
+
+	<script src="/webjars/angularjs/1.6.4/angular-route.js"></script>
+
+	<script src="./js/app.js"></script>
+	<script src="./js/router/router.js"></script>
+	<script src="./js//service/usuario-service.js"></script>
+	<script src="./js/controller/add-controller.js"></script>
+	<script src="./js/controller/list-controller.js"></script>
+
 </body>
 </html>

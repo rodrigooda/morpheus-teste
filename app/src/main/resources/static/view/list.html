@@ -1,0 +1,18 @@
+
+<div>
+<h1 ng-if="!usuarios.length" class="has-text-centered">Nenhum usuário encontrado</h1>
+	<table class="table is-striped is-narrow" ng-if="usuarios.length">
+		<thead>
+			<tr>
+				<th>Index</th>
+				<th>Nome</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="(key, usuario) in usuarios">
+				<td>{{ key }}</td>
+				<td>{{ usuario.nome }}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
