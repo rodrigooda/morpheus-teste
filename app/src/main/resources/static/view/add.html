@@ -1,44 +1,45 @@
 <div>
-<section class="hero is-fullheight is-bold">
-	<div class="hero-body">
-		<div class="container">
-			<div class="columns is-vcentered">
-				<div class="column">
-					<h1 class="title">Cadastro de Usuário</h1>
-					<div class="box">
-						<form name="myForm">
-							<label> Nome</label>
-							<p class="control">
-								<input class="input" type="text" name="nome" ng-model="usuario.nome" required />
-							</p>
-						</form>
+	<section class="hero is-fullheight is-bold">
+		<div class="hero-body">
+			<div class="container">
+				<div class="columns is-vcentered">
+					<div class="column">
+						<h1 class="title">Cadastro de Usuário</h1>
+						<div class="box">
+							<form name="myForm">
+								<label> Nome</label>
+								<p class="control">
+									<input class="input" type="text" name="nome"
+										ng-model="usuario.nome" required />
+								</p>
 
-						<hr />
-						<p class="control">
-							<a class="button is-primary" ng-click="add()">Cadastrar</a>
-							<a href="#!/" class="button is-default">Cancelar</a>
-						</p>
+								<hr />
+								<p class="control">
+									<a class="button is-primary" ng-click="add()">Cadastrar</a> <a
+										href="#!/" class="button is-default">Cancelar</a>
+								</p>
+							</form>
+
+
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
-<div ng-class="['modal', modal.showModal]">
-  <div class="modal-background" ng-click="closeModal()"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
-      <p class="modal-card-title">Cadastro de usuários</p>
-      <button class="delete" ng-click="closeModal()"></button>
-    </header>
-    <section class="modal-card-body">
-      {{modal.mensagem}}
-    </section>
-    <footer class="modal-card-foot">
-      <a class="button" ng-click="closeModal()">Fechar</a>
-    </footer>
-  </div>
-</div>
+	<div ng-class="['modal', modal.showModal]">
+		<div class="modal-background" ng-click="closeModal()"></div>
+		<div class="modal-card">
+			<header class="modal-card-head">
+				<p class="modal-card-title">Cadastro de usuários</p>
+				<button class="delete" ng-click="closeModal()"></button>
+			</header>
+			<section class="modal-card-body">{{modal.mensagem}}</section>
+			<footer class="modal-card-foot">
+				<a class="button" ng-click="closeModal()">Fechar</a>
+			</footer>
+		</div>
+	</div>
 
 </div>

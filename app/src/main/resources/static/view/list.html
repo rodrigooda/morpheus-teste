@@ -1,6 +1,18 @@
 
 <div>
-<h1 ng-if="!usuarios.length" class="has-text-centered">Nenhum usuário encontrado</h1>
+	<form name="myForm">
+		<label> Nome</label>
+		<p class="control">
+			<input class="input" type="text" name="nome" ng-model="nome"
+				required />
+		</p>
+		<hr />
+		<p class="control">
+			<a class="button is-primary" ng-click="search()">Buscar</a>
+		</p>
+	</form>
+	<h1 ng-if="!usuarios.length" class="has-text-centered">Nenhum
+		usuário encontrado</h1>
 	<table class="table is-striped is-narrow" ng-if="usuarios.length">
 		<thead>
 			<tr>
